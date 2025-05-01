@@ -70,45 +70,103 @@ header i {
     font-weight: 400 !important;
     font-size: 24px !important;
   }
-
-  /* ---hero section--- */
-  .hero {
-    min-height: 100vh;
+/* ---hero section--- */
+.hero {
     background-color: #f8f9fa; /* Optional: light background */
     padding: 60px 0;
-  }
-  
-  .hero ul {
-    padding-left: 0;
-    margin-bottom: 0;
-  }
-  
-  .hero ul li {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-  }
-  
-  .hero img {
+}
+
+.hero .container {
+    max-width: 1200px; /* Ensure max width for large screens */
+}
+
+.hero h1 {
+    font-size: 2.5rem; /* Default size for small screens */
+    margin-bottom: 20px;
+}
+
+.hero h3 {
+    font-size: 1.5rem; /* Adjust size for better readability */
+    margin-bottom: 30px;
+}
+
+.hero p {
+    font-size: 1rem; /* Default size for smaller screens */
+    margin-bottom: 12px;
+}
+
+.hero i {
+    width: 20px; /* Keeps icons aligned */
+}
+
+/* Make buttons larger and responsive */
+.hero .btn {
+    min-width: 180px;
+    padding: 12px 25px;
+    line-height: 1.2;
+    font-size: 16px;
+}
+
+.hero img {
     max-width: 100%;
     height: auto;
-  }
-  .hero h1 {
-    font-size: 3.3rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero .btn {
-    min-width: 140px;
-    padding: 10px 20px;
-    line-height: 1.2;
-  }
-  .hero p {
-    font-size: 1.05rem;
-    margin-bottom: 12px;
-  }
-  
-  .hero i {
-    width: 20px; /* keeps icons aligned */
-  }
-  
-  
+    /* Ensure image adjusts to different screens */
+}
+
+/* ---Responsive Adjustments for Larger Screens--- */
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem; /* Bigger heading text on tablets and larger screens */
+    }
+
+    .hero h3 {
+        font-size: 1.3rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem; /* Slightly larger text for readability */
+    }
+
+    .hero .btn {
+        font-size: 18px;
+        padding: 14px 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Larger text for bigger screens */
+    }
+
+    .hero h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero .btn {
+        font-size: 20px;
+        padding: 15px 35px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero h1 {
+        font-size: 2.8rem; /* Even bigger heading on very large screens */
+    }
+
+    .hero h3 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem; /* Slightly bigger for better readability */
+    }
+
+    .hero .btn {
+        font-size: 22px;
+        padding: 16px 40px;
+    }
+}
